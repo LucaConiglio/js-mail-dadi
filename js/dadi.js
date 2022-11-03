@@ -10,13 +10,14 @@ let numero2 = (Math.floor(Math.random()*6) +1);
 let player1 = numero;
 let computer = numero2;
 
-console.log("player 1", player1);
+console.log("player", player1);
 console.log("computer", computer);
 
-if (player1 === computer){
-    alert ("la partita termina in pareggio!!");
-} else if ( player1 > computer ) {
-    alert ("ha vinto il Player 1");
+
+if ( player1 > computer ) {
+    alert ("ha vinto il Player");
 } else if ( computer > player1 ) {
     alert ("ha vinto il Computer");
+}else {
+    alert ("la partita termina in pareggio!!");
 }

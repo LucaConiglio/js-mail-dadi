@@ -8,7 +8,17 @@ console.log(emails);
 let inserisciMail = prompt("inserisci una mail valida");
 
 console.log(inserisciMail);
+let elTrovato = false
 
 for (let i = 0; i < emails.length; i++){
-
+    if (inserisciMail === emails[i]){
+        elTrovato = true
+        
+    }
+    
+}
+if (elTrovato === true){
+    alert(" ho trovato la tua mail puoi entrare")
+} else{
+alert("non ho trovato la tua mail, perfavore ricarica la pagina e reinserisci la tua mail");
 }
